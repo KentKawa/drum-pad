@@ -1,0 +1,50 @@
+.App {
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  background: linear-gradient(45deg, blue, black 20%, black 80%, purple);
+}
+
+.title {
+  color: white;
+}
+
+#drum-machine {
+  border: 5px solid;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    border-image: linear-gradient(45deg, purple, black, blue, black) 1;
+  }
+  25% {
+    border-image: linear-gradient(45deg, black, purple, black, blue) 1;
+  }
+  50% {
+    border-image: linear-gradient(45deg, blue, black, purple, black) 1;
+  }
+  75% {
+    border-image: linear-gradient(45deg, black, blue, black, purple) 1;
+  }
+  100% {
+    border-image: linear-gradient(45deg, purple, black, blue, black) 1;
+  }
+}
+
+.bg-1 {
+  height: 100vh;
+}
+
+.bg-2 {
+  background-color: #01161e;
+}
+
+.bg-3 {
+  background-color: black;
+}
+
+#display {
+  font-size: x-large;
+  color: white;
+}
